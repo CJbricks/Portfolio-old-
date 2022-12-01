@@ -1,0 +1,10 @@
+body {
+    background-color: whitesmoke;
+    background-image: url('.//portimages/wickedbackground.svg');
+    background-size: cover;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    
+};
