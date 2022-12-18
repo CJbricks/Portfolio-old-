@@ -15,6 +15,7 @@ import './Film.css';
     this.onClickPrint = this.onClickPrint.bind(this);
     this.onClickPhotos = this.onClickPhotos.bind(this);
     this.onClickGallery = this.onClickGallery.bind(this);
+    this.onClickWeb = this.onClickWeb.bind(this);
 
     const img0 = require('.//portimages/phone.jpg');
     const img1 = require('.//portimages/copdotcom.jpg');
@@ -31,6 +32,7 @@ import './Film.css';
     const img12 = require('.//portimages/photofolder/blur.jpg');
     const img13 = require('.//portimages/photofolder/dancer.jpg');
     const img14 = require('.//portimages/photofolder/lot.jpg');
+    const img15 = require('.//portimages/stat.jpg');
    
 
 
@@ -39,7 +41,7 @@ import './Film.css';
     this.state = {
       index: 0,
       imgList: [img0, img1, img2, img3, img4, img5, img6, img7, img8,
-         img9, img10, img11, img12, img13, img14 ]
+         img9, img10, img11, img12, img13, img14, img15 ]
     };
 
   };
@@ -92,6 +94,12 @@ import './Film.css';
         index: 10
       })
     }
+
+    onClickWeb() {
+      this.setState({
+        index: 15
+      })
+    }
   
   render(){
     return (
@@ -113,7 +121,7 @@ import './Film.css';
         <div className="category">
           <h1 className="display" onClick={this.onClickDigital}>Digital Media</h1>
           <h1 className="display" onClick={this.onClickPrint}>Print Media</h1>
-          <h1 className="display">Web Projects</h1>
+          <h1 className="display" onClick={this.onClickWeb}>Web Projects</h1>
           <h1 className="display" onClick={this.onClickGallery}>Gallery/Installations</h1>
           
           <h1 className="display" onClick={this.onClickPhotos}>Photographs</h1>
