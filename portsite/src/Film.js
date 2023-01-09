@@ -17,7 +17,7 @@ import './Film.css';
     this.onClickGallery = this.onClickGallery.bind(this);
     this.onClickWeb = this.onClickWeb.bind(this);
 
-    const img0 = require('.//portimages/phone.jpg');
+    const img0 = require('.//portimages/hammerhands.jpg');
     const img1 = require('.//portimages/copdotcom.jpg');
     const img2 = require('.//portimages/painbook.jpg');
     const img3 = require('.//portimages/sleep.jpg');
