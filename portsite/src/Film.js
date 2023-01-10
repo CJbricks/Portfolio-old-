@@ -45,7 +45,7 @@ import './Film.css';
     onClickForward() {
       if(this.state.index + 1 === this.state.imgList.length) {
         this.setState({
-          index: 0,
+          index: 1,
         })
        } else {
         this.setState({
@@ -95,6 +95,8 @@ import './Film.css';
       <div className="body">
 
         <div className="switch-img">
+          
+          
           {/* <button onClick={this.onClickBackward}>Back</button> */}
             <img 
             src={this.state.imgList[this.state.index]}
@@ -102,17 +104,19 @@ import './Film.css';
             height={600}
             width={525}
             className="switch"
-            onClick={this.onClickForward}
             />
         {/* <button onClick={this.onClickForward}>Next img</button> */}
-          
+
+         
+
         </div>
         <div className="category">
           <h1 className="display" onClick={this.onClickDigital}>Digital Media</h1>
           <h1 className="display" onClick={this.onClickPrint}>Print Media</h1>
           <h1 className="display" onClick={this.onClickWeb}>Web Projects</h1>
           <h1 className="display" onClick={this.onClickGallery}>Gallery Projects</h1>
-
+          <button className="prev" onClick={this.onClickBackward}> Prev. </button>
+          <button className="next" onClick={this.onClickForward}> Next </button> 
         </div>
 
       </div>

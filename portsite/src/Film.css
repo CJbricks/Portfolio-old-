@@ -52,3 +52,24 @@
     
     
 }
+
+button {
+    font-family: Helvetica;
+    font-weight: 600;
+    border: none;
+
+}
+
+button:hover {
+    cursor: pointer;
+    color: #34BFC4;
+}
+.prev {
+    margin-right: 15%;
+    justify-content: center;
+}
+
+.next {
+    margin-left: 15%;
+    justify-content: center;
+}
