@@ -15,6 +15,8 @@ import './Film.css';
     this.onClickPrint = this.onClickPrint.bind(this);
     this.onClickGallery = this.onClickGallery.bind(this);
     this.onClickWeb = this.onClickWeb.bind(this);
+    this.onListDisplay = this.onListDisplay.bind(this);
+    this.onChange = this.onChange.bind(this);
 
     const img0 = require('.//portimages/hammerhands.jpg');
     const img1 = require('.//portimages/copdotcom.jpg');
@@ -28,16 +30,15 @@ import './Film.css';
     const img9 = require('.//portimages/brickd.jpg');
     const img10 = require('.//portimages/photofolder/garage.jpg');
     const img11 = require('.//portimages/stat.jpg');
- 
-   
-
 
     
   
     this.state = {
+      display: true,
       index: 0,
       imgList: [img0, img1, img2, img3, img4, img5, img6, img7, img8,
          img9, img10, img11 ]
+      
     };
 
   };
@@ -89,6 +90,39 @@ import './Film.css';
         index: 11
       })
     }
+
+    onChange(){
+      if(this.state.display === false){
+        this.setState({
+          display: true
+        })
+      } else{
+        this.setState({
+          display: false
+        })
+      }
+    }
+
+    onListDisplay() { 
+      if(this.state.display === true){
+        
+        <div style={{display: 'block'}}>
+          <ul>
+          <li>StatSheet</li>
+          <li>Lefty Online Zine</li>
+        </ul>
+        </div>
+      } else {
+            
+            <div style={{display: 'none'}}>
+              <ul>
+              <li>StatSheet</li>
+              <li>Lefty Online Zine</li>
+          </ul>
+            </div>
+          
+        }
+    }
   
   render(){
     return (
@@ -114,6 +148,7 @@ import './Film.css';
           <h1 className="display" onClick={this.onClickDigital}>Digital Media</h1>
           <h1 className="display" onClick={this.onClickPrint}>Print Media</h1>
           <h1 className="display" onClick={this.onClickWeb}>Web Projects</h1>
+          {this.onListDisplay}
           <h1 className="display" onClick={this.onClickGallery}>Gallery Projects</h1>
           <button className="prev" onClick={this.onClickBackward}> Prev. </button>
           <button className="next" onClick={this.onClickForward}> Next </button> 
