@@ -15,14 +15,13 @@ import './Film.css';
     this.onClickPrint = this.onClickPrint.bind(this);
     this.onClickGallery = this.onClickGallery.bind(this);
     this.onClickWeb = this.onClickWeb.bind(this);
-    this.onListDisplay = this.onListDisplay.bind(this);
-    this.onChange = this.onChange.bind(this);
+    
 
     const img0 = require('.//portimages/coverimg.png');
     const img1 = require('.//portimages/hammerhands.jpg');
     const img2 = require('.//portimages/net.jpg');
     const img3 = require('.//portimages/inyourface.jpg');
-    const img4 = require('.//portimages/phone.jpg');
+    const img4 = require('.//portimages/lefty.jpg');
     const img5 = require('.//portimages/copdotcom.jpg');
     const img6 = require('.//portimages/sleep.jpg');
     const img7 = require('.//portimages/painbook.jpg');
@@ -35,7 +34,7 @@ import './Film.css';
     
   
     this.state = {
-      display: true,
+      display: false,
       index: 0,
       imgList: [img0, img1, img2, img3, img4, img5, img6, img7, img8,
          img9, img10, img11 ]
@@ -88,42 +87,14 @@ import './Film.css';
 
     onClickWeb() {
       this.setState({
-        index: 8
+        index: 8,
+        display: !this.state.display
       })
     }
 
-    onChange(){
-      if(this.state.display === false){
-        this.setState({
-          display: true
-        })
-      } else{
-        this.setState({
-          display: false
-        })
-      }
-    }
+ 
 
-    onListDisplay() { 
-      if(this.state.display === true){
-        
-        <div style={{display: 'block'}}>
-          <ul>
-          <li>StatSheet</li>
-          <li>Lefty Online Zine</li>
-        </ul>
-        </div>
-      } else {
-            
-            <div style={{display: 'none'}}>
-              <ul>
-              <li>StatSheet</li>
-              <li>Lefty Online Zine</li>
-          </ul>
-            </div>
-          
-        }
-    }
+   
   
   render(){
     return (
@@ -149,7 +120,12 @@ import './Film.css';
           <h1 className="display" onClick={this.onClickDigital}>Digital Media</h1>
           <h1 className="display" onClick={this.onClickPrint}>Print Media</h1>
           <h1 className="display" onClick={this.onClickWeb}>Web Projects</h1>
-           {this.onListDisplay}
+           {this.state.display === true && 
+            <ul>
+              <a href="tay-game.surge.sh" target="_blank" rel="noopener noreferrer"><li>StatSheet</li></a>
+              <a href="https://lefty.io" target="_blank" rel="noopener noreferrer"><li>Lefty Online Zine</li></a>
+            </ul>
+            }
           <h1 className="display" onClick={this.onClickGallery}>Gallery Projects</h1>
           <button className="prev" onClick={this.onClickBackward}> Prev. </button>
           <button className="next" onClick={this.onClickForward}> Next </button> 

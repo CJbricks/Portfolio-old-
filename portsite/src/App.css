@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(whitesmoke 0%, whitesmoke, whitesmoke, gray);
+   /* background: linear-gradient(whitesmoke 0%, whitesmoke, whitesmoke, gray); */
     background-image: url('.//portimages/wickedbackground.svg'); 
     background-size: cover;
     margin-left: 5px;
