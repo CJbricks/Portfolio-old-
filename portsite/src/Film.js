@@ -18,18 +18,19 @@ import './Film.css';
     this.onListDisplay = this.onListDisplay.bind(this);
     this.onChange = this.onChange.bind(this);
 
-    const img0 = require('.//portimages/hammerhands.jpg');
-    const img1 = require('.//portimages/copdotcom.jpg');
-    const img2 = require('.//portimages/painbook.jpg');
-    const img3 = require('.//portimages/sleep.jpg');
-    const img4 = require('.//portimages/lasso.jpg');
-    const img5 = require('.//portimages/frogDog.jpg');
-    const img6 = require('.//portimages/net.jpg');
-    const img7 = require('.//portimages/inyourface.jpg');
-    const img8 = require('.//portimages/gallery.jpg');
-    const img9 = require('.//portimages/brickd.jpg');
-    const img10 = require('.//portimages/photofolder/garage.jpg');
-    const img11 = require('.//portimages/stat.jpg');
+    const img0 = require('.//portimages/coverimg.png');
+    const img1 = require('.//portimages/hammerhands.jpg');
+    const img2 = require('.//portimages/net.jpg');
+    const img3 = require('.//portimages/inyourface.jpg');
+    const img4 = require('.//portimages/phone.jpg');
+    const img5 = require('.//portimages/copdotcom.jpg');
+    const img6 = require('.//portimages/sleep.jpg');
+    const img7 = require('.//portimages/painbook.jpg');
+    const img8 = require('.//portimages/breakdownlanguages.png');
+    const img9 = require('.//portimages/stat.jpg')
+    const img10 = require('.//portimages/gallery.jpg');
+    const img11 = require('.//portimages/brickd.jpg');
+    
 
     
   
@@ -69,25 +70,25 @@ import './Film.css';
 
     onClickDigital(){
       this.setState({
-        index: 4
+        index: 1
         })
     };
 
     onClickPrint() {
       this.setState({
-        index: 1
+        index: 4
       })
     }
 
     onClickGallery() {
       this.setState({
-        index: 8
+        index: 10
       })
     }
 
     onClickWeb() {
       this.setState({
-        index: 11
+        index: 8
       })
     }
 
@@ -135,8 +136,8 @@ import './Film.css';
             <img 
             src={this.state.imgList[this.state.index]}
             alt='switchbox'
-            height={600}
-            width={525}
+            height={525}
+            width={490}
             className="switch"
             />
         {/* <button onClick={this.onClickForward}>Next img</button> */}
@@ -148,7 +149,7 @@ import './Film.css';
           <h1 className="display" onClick={this.onClickDigital}>Digital Media</h1>
           <h1 className="display" onClick={this.onClickPrint}>Print Media</h1>
           <h1 className="display" onClick={this.onClickWeb}>Web Projects</h1>
-          {this.onListDisplay}
+           {this.onListDisplay}
           <h1 className="display" onClick={this.onClickGallery}>Gallery Projects</h1>
           <button className="prev" onClick={this.onClickBackward}> Prev. </button>
           <button className="next" onClick={this.onClickForward}> Next </button> 
