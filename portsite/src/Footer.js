@@ -19,7 +19,7 @@ export default function Footer(props) {
         </div>
 
         <div className="logo-box" >
-                <a href="https://github.com/cjon343" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.github.com/CJbricks" target="_blank" rel="noopener noreferrer">
                     <img 
                     className= "git-icon"
                     src={gitlogo}

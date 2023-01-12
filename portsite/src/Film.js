@@ -120,11 +120,14 @@ import './Film.css';
           <h1 className="display" onClick={this.onClickDigital}>Digital Media</h1>
           <h1 className="display" onClick={this.onClickPrint}>Print Media</h1>
           <h1 className="display" onClick={this.onClickWeb}>Web Projects</h1>
-           {this.state.display === true && 
+           { this.state.display === true && 
+           <div className="list">
             <ul>
-              <a href="tay-game.surge.sh" target="_blank" rel="noopener noreferrer"><li>StatSheet</li></a>
+              <a href="https://github.com/CJbricks/TayGame" target="_blank" rel="noopener noreferrer"><li>StatSheet</li></a>
+              <br />
               <a href="https://lefty.io" target="_blank" rel="noopener noreferrer"><li>Lefty Online Zine</li></a>
             </ul>
+            </div>
             }
           <h1 className="display" onClick={this.onClickGallery}>Gallery Projects</h1>
           <button className="prev" onClick={this.onClickBackward}> Prev. </button>
