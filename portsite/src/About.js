@@ -4,11 +4,14 @@ import './/About.css';
 export default function About() {
     return (
         <div className="bio">
-            <p>Hello, my name is Cody Christian and I am a Web Developer and Designer 
-                located in Denver Colorado. I work to build an aesthetic and dynamic approach to
-                designing web pages and applications. I have a background in fine art and experience working with
-                coding languages such as HTML, CSS, Javascript, and frameworks such as React.js.
-                I have worked one on one with artists and designers to design their websites from clean slate to full deployment. 
+            <p>
+                I am a Web Devloper and Designer based in Denver CO.
+                Begining in 2014 I studied Fine Art and Sculpture at RMCAD where I
+                found inspiration in the work of many artists contributing to the contemporary
+                art space based around technology <e>Post-Internet Conceptual Installation ie: Artie Vierkant, Timur Si Qin, Stillhouse Group</e>
+                This led me to begin working with front end and designing my own spaces online.
+                I am proficient in Javascript, Typescript, React, React Hooks, HTML/CSS. 
+
             </p>
         </div>
     )

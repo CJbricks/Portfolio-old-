@@ -1,5 +1,4 @@
 import FilmGallery from './Film';
-import About from './/About';
 import Header from './/Head';
 import './App.css';
 import Footer from './/Footer';
@@ -10,9 +9,8 @@ export default class App extends React.Component {
   render(){
     return (
      <div className="App">
-       <Header />
+        <Header />
         <FilmGallery />
-        <About />
         <Footer 
          ighandle="Instagram: @oreo.blizman"
          contact="CJ.christian.web@gmail.com"

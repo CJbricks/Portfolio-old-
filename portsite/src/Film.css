@@ -1,5 +1,5 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+/* @import url(); */
 
 
 
@@ -24,8 +24,6 @@
     padding: 2px;
     object-fit:fill;
 }
-
-
 
 .category {
     margin-left: 100px;
@@ -76,4 +74,6 @@ button:hover {
 .next {
     margin-left: 15%;
 }
-
+.list {
+    text-align: center;
+}
