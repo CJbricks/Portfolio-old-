@@ -2,7 +2,7 @@
 /* @import url(); */
 
 .bio {
-    top: 105%;
+    top: 115%;
     margin-left: 15%;
     height: 30%;
     width: 30%;
@@ -10,6 +10,5 @@
     padding: 10px;
     color: black;
     font-weight: 600;
-    font-family: 'Kanit', Arial, Helvetica, sans-serif;
     
 }

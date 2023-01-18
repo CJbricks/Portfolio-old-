@@ -1,10 +1,12 @@
 import React from 'react';
+
 import './/About.css';
 
 export default function About() {
+    
     return (
         <div className="bio">
-            <p>
+            <p >
                 I am a Web Devloper and Designer based in Denver CO.
                 Begining in 2014 I studied Fine Art and Sculpture at RMCAD where I
                 found inspiration in the work of many artists contributing to the contemporary
@@ -13,6 +15,7 @@ export default function About() {
                 I am proficient in Javascript, Typescript, React, React Hooks, HTML/CSS. 
 
             </p>
+            
         </div>
     )
 }

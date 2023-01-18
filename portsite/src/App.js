@@ -3,21 +3,46 @@ import Header from './/Head';
 import './App.css';
 import Footer from './/Footer';
 import React from 'react';
+import iglogo from ".//portimages/iglogo.png";
+import gitlogo from ".//portimages/gitlogo.png";
 
-export default class App extends React.Component {
- 
-  render(){
+export default function App() {
+
+  const igHandle = 
+  
+    
+    <a href="https://www.instagram.com/oreo.blizman/" target="_blank" rel="noopener noreferrer">
+      <img 
+      className= "icon-ig"
+      src={iglogo}
+      alt="icon-ig"
+      height={75}
+      width={75}
+      />
+    </a>
+
+
+
+const gitHandle = 
+
+  <a href="https://www.github.com/CJbricks" target="_blank" rel="noopener noreferrer">
+    <img 
+    className= "git-icon"
+    src={gitlogo}
+    alt="git-icon"
+    height={75}
+    width={75}
+    />
+  </a>;
+  
     return (
      <div className="App">
         <Header />
         <FilmGallery />
         <Footer 
-         ighandle="Instagram: @oreo.blizman"
-         contact="CJ.christian.web@gmail.com"
-         site="https://cjchristian.com"
-         github="Github: CJbricks"
+         ighandle={igHandle}
+         github={gitHandle}
          /> 
     </div>
-    );
+    )
   };
-  }

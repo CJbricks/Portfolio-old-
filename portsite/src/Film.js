@@ -1,6 +1,9 @@
 import React from 'react';
 import './Film.css';
 
+import { BsFillArrowRightSquareFill } from 'react-icons/bs';
+import { BsFillArrowLeftSquareFill } from 'react-icons/bs';
+
 
 
 
@@ -129,8 +132,8 @@ import './Film.css';
             }
 
           <h1 className="display" onClick={this.onClickGallery}>Gallery Projects</h1>
-          <button className="prev" onClick={this.onClickBackward}> Prev. </button>
-          <button className="next" onClick={this.onClickForward}> Next </button> 
+            <BsFillArrowLeftSquareFill className="prev" onClick={this.onClickBackward} />
+            <BsFillArrowRightSquareFill className="next" onClick={this.onClickForward} />
         </div>
 
       </div>

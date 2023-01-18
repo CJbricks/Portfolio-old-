@@ -32,7 +32,6 @@
 }
 
 .display {
-    
     margin-bottom: 50px;
     font-size: 48px;
     color: black;
@@ -46,34 +45,25 @@
     cursor: pointer;
     opacity: 100%;
     text-align: right;
-    
-    
 }
 
-button {
-    font-family: Helvetica;
-    font-weight: 600;
-    border: none;
-    text-align: center;
-    justify-content: center;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-button:hover {
-    cursor: pointer;
-    color: #34BFC4;
-    border: 1px solid #34BFC4;
-}
 .prev {
-    margin-right: 15%;
-    margin-left: 18%;
-    
+    margin-right: 45%;
+    margin-left: 10%;
+   
+    transform: scale(1.5);
 }
 
 .next {
     margin-left: 15%;
+    transform: scale(1.5);
 }
 .list {
     text-align: center;
 }
+
+.prev:hover, .next:hover{
+    border-radius: 5px;
+    cursor: pointer;
+}
+

@@ -23,7 +23,7 @@ export default function Header() {
                     
                     </h1>
                     <a href="https://www.bigcartel.com/" target="_blank" rel="noopener noreferrer"><h1 className="textbox">Store</h1></a>
-                    <h1 className="textbox">Resume / CV</h1>
+                    <a href="http://cjchristian-resume.surge.sh" target="_blank" rel="noopener noreferrer"><h1 className="textbox">Resume X CV</h1></a>
                     <p className="name-tag" >Cody Christian Web Dev / Design</p>
                 </div>
 

@@ -1,7 +1,8 @@
 .component{
     display: inline;
-    float: right;
+    float:right;
     margin-bottom: 5%;
+    margin-right: 8%;
   /*  border: 1px solid black; */
 }
 .foot-box {
@@ -11,14 +12,6 @@
    /* border: 1px solid black; */
     width: 500px;
     margin-top: 10%;
-}
-
-.logo-box {
-    width: 50%;
-    margin-left: 8%;
-   /* border: 1px solid black; */
-    float: right;
-    margin-top: 2%;
 }
 
 .git-icon{
