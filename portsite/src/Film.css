@@ -22,7 +22,7 @@
     position: relative; 
     border: 2px solid black;
     padding: 2px;
-    object-fit:fill;
+    object-fit: cover;
 }
 
 .category {

@@ -30,8 +30,12 @@ import { BsFillArrowLeftSquareFill } from 'react-icons/bs';
     const img7 = require('.//portimages/painbook.jpg');
     const img8 = require('.//portimages/breakdownlanguages.png');
     const img9 = require('.//portimages/stat.jpg')
-    const img10 = require('.//portimages/gallery.jpg');
-    const img11 = require('.//portimages/brickd.jpg');
+    const img10 = require('.//portimages/gallery/full1.jpg');
+    const img11 = require('.//portimages/gallery/makedo.jpg');
+    const img12 = require('.//portimages/gallery/makedouble.jpg');
+    const img13 = require('.//portimages/gallery/woes1.jpg');
+    const img14 = require('.//portimages/gallery/snap3.jpg');
+    const img15 = require('.//portimages/gallery/PTRLFM.jpg');
     
 
     
@@ -40,7 +44,7 @@ import { BsFillArrowLeftSquareFill } from 'react-icons/bs';
       display: false,
       index: 0,
       imgList: [img0, img1, img2, img3, img4, img5, img6, img7, img8,
-         img9, img10, img11 ]
+         img9, img10, img11, img12, img13, img14, img15 ]
       
     };
 
